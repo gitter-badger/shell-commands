@@ -1,7 +1,7 @@
 # commands
-This is about basic commands collections that we encounter in daily basis
+##This is about basic commands collections that we encounter in daily basis
 ---
-## unzip the files 
+### unzip the files 
 ```bash
 unzip file-name.zip -d destination-path
 ```
