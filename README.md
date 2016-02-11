@@ -7,5 +7,12 @@ unzip file-name.zip -d destination-path
 ```
     if unzip is not present just install it 
     sudo apt-get install unzip 
-    the installation depends on the linux-XX os
+    the installation depends on the linux-XX os 
+### converting images to pdf in unite 
+```bash
+convert one.jpg two.jpg final.pdf
+```
+    this command is used to convert images to pdf 
+    all pdf to single pdf file 
+    
   
