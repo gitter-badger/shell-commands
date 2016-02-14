@@ -15,4 +15,10 @@ convert one.jpg two.jpg final.pdf
     this command is used to convert images to pdf 
     all pdf to single pdf file 
     
+###ssh key generation 
+```ssh-keygen
+```
+###changing the default editor 
+```sudo update-alternatives --config editor```
+
   
