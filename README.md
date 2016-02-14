@@ -16,8 +16,10 @@ convert one.jpg two.jpg final.pdf
     all pdf to single pdf file 
     
 ###ssh key generation 
-```ssh-keygen
 ```
+    ssh-keygen
+```
+
 ###changing the default editor 
 ```sudo update-alternatives --config editor```
 
