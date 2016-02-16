@@ -64,4 +64,14 @@ for example in above aliases ```alias rm = 'rm -i'``` this will interactively re
 ####Check the aliases 
 check your aliases with command `alias`
 
+###Adding the path permanently 
+There are two ways you can do   
+##### Editinng `~./profile or ~./bash_profile` 
+```export PATH=$PATH:/path to be added/``` add this line either of the files
+
+####Editing ```/etc/environment`` :file  
+
+when you open the file you will find the following line just add the path to end of the line  
+```PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"``` add the `:` at the end add your path here
+
 
