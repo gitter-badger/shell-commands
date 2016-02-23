@@ -75,3 +75,14 @@ when you open the file you will find the following line just add the path to end
 ```PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"``` add the `:` at the end add your path here
 
 
+###Installing all fonts at once 
+copy all fonts in the directory called `.fonts` if directory is not present create one directory   
+```
+cd;mkdir .fonts
+```
+or
+```
+cd ~
+mkdir .fonts
+```
+copy all your fonts to `.fonts` folder and run the command `fc-cache -f -v` this command refresh the fonts now you can use the fonts
