@@ -86,3 +86,6 @@ cd ~
 mkdir .fonts
 ```
 copy all your fonts to `.fonts` folder and run the command `fc-cache -f -v` this command refresh the fonts now you can use the fonts
+
+#### Right click to open terminal
+`sudo apt-get install nautilus-open-terminal`this is for ubuntu and elementary os 
