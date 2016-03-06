@@ -89,3 +89,28 @@ copy all your fonts to `.fonts` folder and run the command `fc-cache -f -v` this
 
 #### Right click to open terminal
 `sudo apt-get install nautilus-open-terminal`this is for ubuntu and elementary os 
+
+#### Making auto start application 
+`.config/autostart` drop all the applicatin files inside this folder 
+
+#### Conky setup and runnig multiple files
+##### Installation
+```bash
+sudo apt-get install conky-all
+sudo apt-get install conky
+sudo apt-get install lm-sensors hddtemp
+```
+To set multiple Conky to run at startup, create a folder called `.conky` 
+```
+mkdir ~/.conky       //add all conky configuration files to this folder ex conkyrc_network,conkyrc_clock ..... 
+```
+Make a file called `conky_start` in the folder `~/bin` if the folder is not present create one with command `mkdir ~/bin`    
+Add the following lines to the file 
+```
+ #!/bin/bash
+conky -c ~/.conky/.conkyrc_network &
+conky -c ~/.conky/.conkyrc_clock
+```
+add the startup command as `~/bin/conky_start`  
+
+all lines must end with `&` except the last line in this way you can add the multiple files 
