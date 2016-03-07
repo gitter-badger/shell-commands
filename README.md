@@ -113,4 +113,11 @@ conky -c ~/.conky/.conkyrc_clock
 ```
 add the startup command as `~/bin/conky_start`  
 
-all lines must end with `&` except the last line in this way you can add the multiple files 
+all lines must end with `&` except the last line in this way you can add the multiple files   
+
+### Show the top ten running processes (sorted by memory usage):
+` ps aux | sort -nrk 4 | head `
+### Executing previous command as root 
+`sudo !!`
+### Recording the Desktop Video
+` ffmpeg -f x11grab -s wxga -r 25 -i :0.0 -sameq /tmp/out.mpg `
