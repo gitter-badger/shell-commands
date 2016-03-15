@@ -121,3 +121,8 @@ all lines must end with `&` except the last line in this way you can add the mul
 `sudo !!`
 ### Recording the Desktop Video
 ` ffmpeg -f x11grab -s wxga -r 25 -i :0.0 -sameq /tmp/out.mpg `
+
+#### Deleting all folders except some specific folders in a directory
+```
+find /dirctory where to remove/ -type d -not -name folder1 -not -name folder2 -exec rm -R {} \
+```
