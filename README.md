@@ -124,5 +124,5 @@ all lines must end with `&` except the last line in this way you can add the mul
 
 #### Deleting all folders except some specific folders in a directory
 ```
-find /dirctory where to remove/ -type d -not -name folder1 -not -name folder2 -exec rm -R {} \
+find /dirctory where to remove/ -type d -not -name folder1 -not -name folder2 -exec rm -R {} \;
 ```
