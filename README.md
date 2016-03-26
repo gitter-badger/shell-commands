@@ -126,3 +126,9 @@ all lines must end with `&` except the last line in this way you can add the mul
 ```
 find /dirctory where to remove/ -type d -not -name folder1 -not -name folder2 -exec rm -R {} \;
 ```
+### finding the file size or dism usage of the file
+```
+du -a
+du -a -h
+du -a -s
+```
