@@ -126,9 +126,17 @@ all lines must end with `&` except the last line in this way you can add the mul
 ```
 find /dirctory where to remove/ -type d -not -name folder1 -not -name folder2 -exec rm -R {} \;
 ```
-### finding the file size or dism usage of the file
+### finding the file size or disk usage of the file
 ```
 du -a
 du -a -h
 du -a -s
+```
+### enable wifi if it is blocked
+```
+rfkill unblock all
+sudo /etc/init.d/networking restart
+sudo rm /etc/udev/rules.d/70-persistent-net.rules
+sudo reboot
+
 ```
