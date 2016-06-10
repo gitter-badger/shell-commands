@@ -140,3 +140,18 @@ sudo rm /etc/udev/rules.d/70-persistent-net.rules
 sudo reboot
 
 ```
+### Adding Insults when you type wrong password for sudo
+
+For this you need to edit the configuration of sudo you need to add the following line 
+
+```
+Defaults      insults
+```
+To edit the configuration type the following command  
+
+```
+sudo visudo
+```          
+It will open the `/etc/sudoers.tmp` configuration in nano editor after adding the line you need to press `Ctrl+X` then it will ask for save the changes press `y` for accepting the changes.        
+
+Then get ready to being insulted :smile:
