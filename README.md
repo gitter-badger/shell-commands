@@ -154,4 +154,12 @@ sudo visudo
 ```          
 It will open the `/etc/sudoers.tmp` configuration in nano editor after adding the line you need to press `Ctrl+X` then it will ask for save the changes press `y` for accepting the changes.        
 
-Then get ready to being insulted :smile:
+Then get ready to being insulted :smile:       
+
+### Enabling the autocd 
+```bash
+shopt -s autocd
+```
+After Enabling this command whenever you type if the command is not present then automatically it takes that input and apply for `cd`     
+#####Example
+Think you have the followinf directory structure `/home/user/bin/code` and your present directory is `/home/user` then if you want to change the directory to `bin` you no need to type `cd bin` just type `bin` it will changes automatically .
