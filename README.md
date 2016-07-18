@@ -181,3 +181,14 @@ Here You can use your own node version instead of the `stable` key word for exam
 ```bash
 sudo n 6.3.0
 ```
+##### Upgrading the npm to specific version
+
+```bash
+npm install npm@latest 
+```
+How ever the above command install the latest stable version not to install specfif version then you have to be do like the following
+
+```bash
+npm install npm@#version
+```       
+replace `#version` with your version number wanna install
