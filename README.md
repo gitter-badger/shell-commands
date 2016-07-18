@@ -169,3 +169,15 @@ shopt -s autocd
 After Enabling this command whenever you type if the command is not present then automatically it takes that input and apply for `cd`     
 #####Example
 Think you have the followinf directory structure `/home/user/bin/code` and your present directory is `/home/user` then if you want to change the directory to `bin` you no need to type `cd bin` just type `bin` it will changes automatically .
+
+##### Upgrading the Node 
+```bash
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+**Note**              
+Here You can use your own node version instead of the `stable` key word for example If you want install the node version `6.3.0` then the line should be like the following one              
+```bash
+sudo n 6.3.0
+```
