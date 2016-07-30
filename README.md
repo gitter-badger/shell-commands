@@ -192,3 +192,9 @@ How ever the above command install the latest stable version not to install spec
 npm install npm@#version
 ```       
 replace `#version` with your version number wanna install
+
+##### Displaying the process tree    
+```bash
+pstree -p
+```
+The above command displays the all processes & its child process as well 
