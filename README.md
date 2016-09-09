@@ -198,3 +198,71 @@ replace `#version` with your version number wanna install
 pstree -p
 ```
 The above command displays the all processes & its child process as well 
+
+
+##### Removing only empty folders
+```bash
+rm -d /dir/path/ 
+```
+This removes the directories which are empty,but if the directory contains the another empty directory then it will raise an error saying that cannot delete the non empty directory .So, this command deletes empty directories at the first level only.
+
+
+##### Copying the files remotely
+```bash
+scp [option] user@host:source user2@host2:destination
+```
+######Options
+1. -C enables the compression while sending the data
+2. -l limit limit the bandwidth specified in the kb/s
+3. -p preserves the attributes of the copied file with the original file
+4. -q do not print the any progress on the stdout
+5. -r copying the directories recursively 
+6. -v verbose the output while the copy is in progress             
+
+#####Files Comparison using the diff
+```bash
+diff [option] file1 file2
+```
+Used compare the files line by line      
+######Options
+1. -q prints only if the files differ
+2. -s prints the stdout if the two files are identical
+3. -y Display the diff results side by side
+4. -i case-insensitive comparison  of the file
+5. -b Ignore changes  in the number of white space
+6. -u NUM Ouptput NUM(default 3) lines of unified context
+7. -a Consider files as text files while comparison
+
+##### Pid of ProcessName
+```bash
+pidof process_name
+```
+This returns the process id of the given process name 
+
+##### Killing process by name
+```bash
+pkill process_name
+```
+This kills all  the matched process by the given process_name.        
+so we have to be more careful while using `pkill`.        
+So find the process you wanna kill then do the job you need.    
+`pgrep process_name` gives the results of the matched process. 
+
+##### Changing and Scheduling the process
+```bash
+nice -n 10 firefox
+```
+Here  `0` means the highest priority. `10` means the least priority 
+.      
+Process created by the use default gets the nice value `0`. This nice     
+command works only at the time of the process launch you can use the `renice`       
+command to change the running process scheduling priority.   
+```bash
+renice [-n] priority [-g|-p|-u] identifier
+sudo renice -n -5 -u john
+```
+The above command modifies the priority of all processes using by 
+the user john.
+
+
+
