@@ -264,5 +264,23 @@ sudo renice -n -5 -u john
 The above command modifies the priority of all processes using by 
 the user john.
 
+##### Current Process Id
+```bash
+echo $$
+```
+This prints the current process pid
 
 
+##### Creating Psedo Randome Number
+```bash
+echo $RANDOM
+```
+creates  Numbers between 0 and 32,767 How ever You can change this 
+
+##### Finding the Unix Distribution
+```bash
+uname
+of
+$(uname)
+```
+This prints Unix Distribution You are Using
